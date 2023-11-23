@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+/* App.css */
+.accordion {
+  width: 70%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Menyembunyikan border-bottom pada item terakhir */
+.accordion-item:last-child {
+  border-bottom: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Gaya untuk setiap item accordion */
+.accordion-item {
+  border-left: 1px solid #ccc; /* Menambah border di sebelah kiri */
+  border-right: 1px solid #ccc; /* Menambah border di sebelah kanan */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Gaya untuk judul atau header accordion */
+.accordion-title {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f7f7f7;
 }
 
-.App-link {
-  color: #61dafb;
+.accordion-title:hover {
+  background-color: #eaeaea;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Gaya untuk konten accordion yang tersembunyi */
+.accordion-content {
+  padding: 10px;
+  background-color: #fff;
 }
